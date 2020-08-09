@@ -461,7 +461,7 @@ class IQ_Option:
                 if self.api.candles.candles_data != None:
                     break
             except:
-                logging.error('**error** get_candles need reconnect')
+                # logging.error('**error** get_candles need reconnect')
                 raise Exception('Deu ruim')
 
         return self.api.candles.candles_data
