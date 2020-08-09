@@ -457,7 +457,7 @@ class IQ_Option:
                 self.api.getcandles(
                     OP_code.ACTIVES[ACTIVES], interval, count, endtime)
                 while self.check_connect and self.api.candles.candles_data == None:
-                    raise Exception('Deu ruim1')
+                    pass
                 if self.api.candles.candles_data != None:
                     break
             except:
